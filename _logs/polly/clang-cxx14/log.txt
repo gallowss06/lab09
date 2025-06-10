@@ -1,0 +1,307 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.31.6
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/kali/gallowss06/workspace/projects/lab07/_builds/clang-cxx14`
+  `-GUnix Makefiles`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/kali/gallowss06/workspace/projects/lab07/tools/polly/clang-cxx14.cmake`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "cmake" "-H." "-B/home/kali/gallowss06/workspace/projects/lab07/_builds/clang-cxx14" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/home/kali/gallowss06/workspace/projects/lab07/tools/polly/clang-cxx14.cmake"
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 19.1.7
+-- The CXX compiler identification is Clang 19.1.7
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/kali/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 33ed2a8 | Config-ID: cf272be ]
+-- [hunter] GTEST_ROOT: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Install (ver.: 1.15.2)
+-- [hunter] Building GTest
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/cache.cmake
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 19.1.7
+-- The CXX compiler identification is Clang 19.1.7
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Build
+[  6%] Creating directories for 'GTest-Release'
+[ 12%] Performing download step (download, verify and extract) for 'GTest-Release'
+-- verifying file...
+       file='/home/kali/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/kali/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
+-- extracting...
+     src='/home/kali/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+     dst='/home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 18%] No update step for 'GTest-Release'
+[ 25%] No patch step for 'GTest-Release'
+[ 31%] Performing configure step for 'GTest-Release'
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/cache.cmake
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 19.1.7
+-- The CXX compiler identification is Clang 19.1.7
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
+[ 37%] Performing build step for 'GTest-Release'
+[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 25%] Linking CXX static library ../lib/libgtest.a
+[ 25%] Built target gtest
+[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 62%] Linking CXX static library ../lib/libgtest_main.a
+[ 62%] Built target gtest_main
+[ 75%] Linking CXX static library ../lib/libgmock.a
+[ 75%] Built target gmock
+[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../lib/libgmock_main.a
+[100%] Built target gmock_main
+[ 43%] Performing install step for 'GTest-Release'
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgmock.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgmock_main.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-assertion-result.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-message.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgtest.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgtest_main.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/args.cmake
+[ 50%] Completed 'GTest-Release'
+[ 50%] Built target GTest-Release
+[ 56%] Creating directories for 'GTest-Debug'
+[ 62%] Performing download step (download, verify and extract) for 'GTest-Debug'
+-- verifying file...
+       file='/home/kali/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/kali/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
+-- extracting...
+     src='/home/kali/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+     dst='/home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 68%] No update step for 'GTest-Debug'
+[ 75%] No patch step for 'GTest-Debug'
+[ 81%] Performing configure step for 'GTest-Debug'
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/cache.cmake
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 19.1.7
+-- The CXX compiler identification is Clang 19.1.7
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
+[ 87%] Performing build step for 'GTest-Debug'
+[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 25%] Linking CXX static library ../lib/libgtestd.a
+[ 25%] Built target gtest
+[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 62%] Linking CXX static library ../lib/libgtest_maind.a
+[ 62%] Built target gtest_main
+[ 75%] Linking CXX static library ../lib/libgmockd.a
+[ 75%] Built target gmock
+[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../lib/libgmock_maind.a
+[100%] Built target gmock_main
+[ 93%] Performing install step for 'GTest-Debug'
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgmockd.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgmock_maind.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-assertion-result.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-message.h
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Up-to-date: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgtestd.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/libgtest_maind.a
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+loading initial cache file /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest/args.cmake
+[100%] Completed 'GTest-Debug'
+[100%] Built target GTest-Debug
+-- [hunter] Build step successful (dir: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Build/GTest)
+-- [hunter] Cache saved: /home/kali/projects/hunter/_Base/Cache/raw/7385abf5a5b8d195d30aa4484cc27f9d07e012c4.tar.bz2
+-- Found GTest: /home/kali/projects/hunter/_Base/xxxxxxx/33ed2a8/cf272be/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.15.2")
+-- Configuring done (15.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kali/gallowss06/workspace/projects/lab07/_builds/clang-cxx14
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/kali/gallowss06/workspace/projects/lab07/_builds/clang-cxx14`
+  `--`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "cmake" "--build" "/home/kali/gallowss06/workspace/projects/lab07/_builds/clang-cxx14" "--"
+[ 25%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
+[ 50%] Linking CXX static library libprint.a
+[ 50%] Built target print
+[ 75%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
+[100%] Linking CXX executable demo
+[100%] Built target demo

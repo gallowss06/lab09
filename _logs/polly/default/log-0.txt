@@ -1,0 +1,76 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.31.6
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/kali/gallowss06/workspace/projects/lab07/_builds/default`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/kali/gallowss06/workspace/projects/lab07/tools/polly/default.cmake`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "cmake" "-H." "-B/home/kali/gallowss06/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/kali/gallowss06/workspace/projects/lab07/tools/polly/default.cmake"
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- [polly] Used toolchain: Default
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/kali/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: d1e9b55 | Config-ID: cf272be ]
+-- [hunter] GTEST_ROOT: /home/kali/projects/hunter/_Base/xxxxxxx/d1e9b55/cf272be/Install (ver.: 1.15.2)
+-- Found GTest: /home/kali/projects/hunter/_Base/xxxxxxx/d1e9b55/cf272be/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.15.2")
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kali/gallowss06/workspace/projects/lab07/_builds/default
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/kali/gallowss06/workspace/projects/lab07/_builds/default`
+  `--`
+]
+[/home/kali/gallowss06/workspace/projects/lab07]> "cmake" "--build" "/home/kali/gallowss06/workspace/projects/lab07/_builds/default" "--"
+[ 25%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
+[ 50%] Linking CXX static library libprint.a
+[ 50%] Built target print
+[ 75%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
+[100%] Linking CXX executable demo
+[100%] Built target demo
+Execute command: [
+  `ctest`
+]
+[/home/kali/gallowss06/workspace/projects/lab07/_builds/default]> "ctest"
+*********************************
+No test configuration file found!
+*********************************
+Usage
+
+  ctest [options]
+
